@@ -412,21 +412,11 @@ For simplicity, the inertial term is often absorbed into the boundary conditions
 
 Combining all previously derived physical mechanisms — inertial resistance, variable-tension restoring force, elastic deformation, Coriolis coupling, atmospheric damping, and climber forcing — yields the full governing partial differential equation for transverse tether oscillations:
 
-$$\boxed{
-\rho\,\frac{\partial^2 y}{\partial t^2}
-= \frac{\partial}{\partial x}\!\left(T(x)\frac{\partial y}{\partial x}\right)
-+ EA\frac{\partial^2 u}{\partial x^2}
-- 2\rho\Omega\frac{\partial u}{\partial t}
-- c_d(x)\frac{\partial y}{\partial t}
-+ F_0\,\delta(x - v_c t)
-}$$
+$$\boxed{\rho\,\frac{\partial^2 y}{\partial t^2} = \frac{\partial}{\partial x}\!\left(T(x)\frac{\partial y}{\partial x}\right) + EA\frac{\partial^2 u}{\partial x^2} - 2\rho\Omega\frac{\partial u}{\partial t} - c_d(x)\frac{\partial y}{\partial t} + F_0\,\delta(x - v_c t)}$$
 
 This equation must be solved simultaneously with the longitudinal equation of motion:
 
-$$\rho\,\frac{\partial^2 u}{\partial t^2}
-= \frac{\partial}{\partial x}\!\left(EA\frac{\partial u}{\partial x}\right)
-+ 2\rho\Omega\frac{\partial y}{\partial t}
-- \rho\, g_\text{eff}(x)$$
+$$\rho\,\frac{\partial^2 u}{\partial t^2} = \frac{\partial}{\partial x}\!\left(EA\frac{\partial u}{\partial x}\right) + 2\rho\Omega\frac{\partial y}{\partial t} - \rho\, g_\text{eff}(x)$$
 
 The two equations are coupled: $y$ appears in the longitudinal equation through the Coriolis term, and $u$ appears in the transverse equation through the Coriolis and elastic terms. Together they form a system of two coupled, linear, variable-coefficient partial differential equations driven by a moving source.
 
@@ -737,19 +727,11 @@ The complete governing system, restated for clarity, is the coupled pair of part
 
 **Transverse equation:**
 
-$$\rho\,\frac{\partial^2 y}{\partial t^2}
-= \frac{\partial}{\partial x}\!\left(T(x)\frac{\partial y}{\partial x}\right)
-+ EA\frac{\partial^2 u}{\partial x^2}
-- 2\rho\Omega\frac{\partial u}{\partial t}
-- c_d(x)\frac{\partial y}{\partial t}
-+ F_0\,\delta(x - v_c t)$$
+$$\rho\,\frac{\partial^2 y}{\partial t^2} = \frac{\partial}{\partial x}\!\left(T(x)\frac{\partial y}{\partial x}\right) + EA\frac{\partial^2 u}{\partial x^2} - 2\rho\Omega\frac{\partial u}{\partial t} - c_d(x)\frac{\partial y}{\partial t} + F_0\,\delta(x - v_c t)$$
 
 **Longitudinal equation:**
 
-$$\rho\,\frac{\partial^2 u}{\partial t^2}
-= \frac{\partial}{\partial x}\!\left(EA\frac{\partial u}{\partial x}\right)
-+ 2\rho\Omega\frac{\partial y}{\partial t}
-- \rho\, g_\text{eff}(x)$$
+$$\rho\,\frac{\partial^2 u}{\partial t^2} = \frac{\partial}{\partial x}\!\left(EA\frac{\partial u}{\partial x}\right) + 2\rho\Omega\frac{\partial y}{\partial t} - \rho\, g_\text{eff}(x)$$
 
 **Effective gravitational field:**
 
